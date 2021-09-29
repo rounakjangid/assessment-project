@@ -11,9 +11,7 @@ import { PropertyListingsConsumer } from './components/Propertylistings';
 ReactDOM.render(
    
   <App/>
-  <Header/>
-  <Counter/>
-  <Propertylistings/>
+  
     ,
 
   document.getElementById('root')

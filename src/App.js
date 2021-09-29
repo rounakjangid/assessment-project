@@ -64,10 +64,12 @@ class App extends Component {
       this.setState({counters});
   }
 
-  render() {
-    return (
+  render() 
+    return {
       const { children } = this.props
       const { propertyListings } = this.state
+  }
+  
     (
         <PropertyListingsContext.Provider
           value={{
@@ -88,10 +90,8 @@ class App extends Component {
       )
     }
       
-      <React.Fragment>
-        <Navbar
-          totalCounters={this.state.counters.filter((c) => c.value > 0).length}
-        />
+      
+        
         <main className="container mt-2">
           <Counters
             counters={this.state.counters}
@@ -100,9 +100,10 @@ class App extends Component {
             onDecrement={this.handleRemove}
             onDelete={this.handleDelete}
           />
-        </main>
-      </React.Fragment>
-    );
+        
+
   }
+};
+  
 
 export default App;
